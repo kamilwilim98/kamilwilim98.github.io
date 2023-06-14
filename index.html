@@ -33,6 +33,12 @@
         line-height: 1.5;
       }
 
+      h2 {
+        font-size: 24px;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+
       .icon {
         display: inline-block;
         margin-right: 10px;
@@ -48,6 +54,18 @@
         content: "\f0e0";
       }
 
+      .icon-nodejs:before {
+        content: "\f419";
+      }
+
+      .icon-typescript:before {
+        content: "\f7ba";
+      }
+
+      .icon-aws:before {
+        content: "\f270";
+      }
+
       .icon a {
         text-decoration: none;
         color: inherit;
@@ -61,12 +79,24 @@
   <body>
     <div class="container">
       <h1>Welcome to My Portfolio</h1>
-      <p>
-        This is some example content. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nullam euismod massa vitae lacus malesuada, sit amet
-        rutrum nisl commodo. Nulla facilisi.
-      </p>
+      <h2>General Skills</h2>
+      <div>
+        <span class="icon icon-nodejs"></span>
+        <span class="text">Node.js</span>
+        <span class="level">Medium-Senior Level</span>
+      </div>
+      <div>
+        <span class="icon icon-typescript"></span>
+        <span class="text">TypeScript</span>
+        <span class="level">Medium Level</span>
+      </div>
+      <div>
+        <span class="icon icon-aws"></span>
+        <span class="text">AWS</span>
+        <span class="level">Medium Level</span>
+      </div>
 
+      <h2>Contact</h2>
       <div class="icons">
         <span class="icon icon-linkedin"
           ><a
