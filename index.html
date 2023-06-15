@@ -1,131 +1,110 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Portfolio</title>
+    <title>Kamil Wilim Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <style>
-      html,
+      * {
+        box-sizing: border-box;
+      }
+
       body {
-        height: 100%;
         margin: 0;
         padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      main {
+        min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        font-family: Arial, sans-serif;
         background-color: #f2f2f2;
       }
 
-      .container {
-        max-width: 600px;
-        margin: 0 auto;
+      section {
+        text-align: center;
+        padding: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center; /* Vertically center the icon with text */
+        justify-content: center; /* Horizontally center the icon with text */
+        margin-top: 1rem;
       }
 
       .avatar {
-        margin-bottom: 20px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 20px; /* Adjust as needed */
+        margin: 0 auto;
       }
 
       .avatar img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
 
-      h1 {
-        font-size: 32px;
-        color: #333333;
-        margin-bottom: 20px;
-      }
-
-      p {
-        font-size: 18px;
-        color: #666666;
-        line-height: 1.5;
-      }
-
-      h2 {
-        font-size: 24px;
-        color: #333333;
-        margin-bottom: 10px;
+      .icons-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
       }
 
       .icon {
-        display: inline-block;
-        margin-right: 10px;
-        font-size: 24px;
-        color: #333333;
-      }
-
-      .icon-linkedin:before {
-        content: "\f08c";
-      }
-
-      .icon-email:before {
-        content: "\f0e0";
-      }
-
-      .icon-nodejs:before {
-        content: "\f419";
-      }
-
-      .icon-typescript:before {
-        content: "\f7ba";
-      }
-
-      .icon-aws:before {
-        content: "\f270";
-      }
-
-      .icon a {
-        text-decoration: none;
-        color: inherit;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 2rem;
       }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
   </head>
   <body>
-    <div class="container">
-      <div class="avatar">
-        <img src="./profile.jpeg" alt="Profile Picture" />
-      </div>
-      <h1>Welcome to My Portfolio</h1>
-      <h2>General Skills</h2>
-      <div>
-        <span class="fa-brands fa-node-js"></span>
-        <span class="text">Node.js</span>
-        <span class="level">Medium-Senior Level</span>
-      </div>
-      <div>
-        <span class="fa-brands fa-js"></span>
-        <span class="text">TypeScript</span>
-        <span class="level">Medium Level</span>
-      </div>
-      <div>
-        <span class="fa-brands fa-aws"></span>
-        <span class="text">AWS</span>
-        <span class="level">Medium Level</span>
-      </div>
-
-      <h2>Contact</h2>
-      <div class="icons">
-        <span class="icon icon-linkedin"
-          ><a
-            href="https://www.linkedin.com/in/kamil-wilim/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fa fa-linkedin"></i></a
-        ></span>
-        <span class="icon icon-email"
-          ><a
-            href="mailto:kamilwilim98@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fa fa-envelope"></i></a
-        ></span>
-      </div>
-    </div>
+    <main>
+      <section>
+        <div class="avatar">
+          <img src="./profile.jpeg" alt="Profile Picture" />
+        </div>
+        <h1>My name is Kamil Wilim</h1>
+        <p>
+          Experienced software developer adept at solving business problems and
+          implementing enterprise code
+        </p>
+        <div class="icons-container">
+          <a href="#">
+            <i class="fab fa-node-js icon"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-aws icon"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-js icon"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-docker icon"></i>
+          </a>
+        </div>
+        <div>
+          <a href="mailto:kamilwilim98@gmail.com">
+            <i class="icon fas fa-envelope"></i> kamilwilim98@gmail.com
+          </a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <i class="icon fab fa-linkedin"></i> LinkedIn Profile
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
